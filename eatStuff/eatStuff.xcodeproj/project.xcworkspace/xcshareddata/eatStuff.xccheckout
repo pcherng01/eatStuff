@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DBACF8F6-B97B-492F-8793-27405558C5B2</string>
+	<key>IDESourceControlProjectName</key>
+	<string>eatStuff</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B618D1CB5E05B17A14A5B5D96A2E0D57A0181EB2</key>
+		<string>https://github.com/schmitzjake/eatstuff.git</string>
+		<key>ECFF81232C0CD0FA6E10F16756DA8DDA888F5F17</key>
+		<string>https://github.com/pcherng01/eatStuff.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>eatStuff/eatStuff.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B618D1CB5E05B17A14A5B5D96A2E0D57A0181EB2</key>
+		<string>../../../..</string>
+		<key>ECFF81232C0CD0FA6E10F16756DA8DDA888F5F17</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/pcherng01/eatStuff.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ECFF81232C0CD0FA6E10F16756DA8DDA888F5F17</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B618D1CB5E05B17A14A5B5D96A2E0D57A0181EB2</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ECFF81232C0CD0FA6E10F16756DA8DDA888F5F17</string>
+			<key>IDESourceControlWCCName</key>
+			<string>eatStuff</string>
+		</dict>
+	</array>
+</dict>
+</plist>
