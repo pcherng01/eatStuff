@@ -11,6 +11,9 @@
 @interface FormViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *urlText;
 @property (nonatomic,strong) NSURLSession *session;
+@property (weak, nonatomic) IBOutlet UITextField *nameText;
+@property (weak, nonatomic) IBOutlet UITextField *emailText;
+@property (weak, nonatomic) IBOutlet UITextField *partyText;
 
 @end
 
@@ -35,14 +38,48 @@
    self.urlText.text = _urlString;
    
 }
-/*
+
+- (IBAction)postRequestJSON:(id)sender {
+   /*
+   NSString *nameString = [[NSString alloc]initWithFormat:_nameText.text];
+    NSString *emailString = [[NSString alloc]initWithFormat:_emailText.text];*/
+   self.partySize = [NSNumber numberWithInt:[_partyText.text intValue]];
+   
+   
+   NSDictionary *data = [NSDictionary dictionaryWithObjectsAndKeys:_nameText.text,@"name",self.partySize,@"partySize",_emailText.text,@"email",nil];
+   NSError *error = [[NSError alloc]init];
+   NSData *jsonData = [NSJSONSerialization dataWithJSONObject:data options:kNilOptions error:&error];
+   
+   NSMutableURLRequest *request = [[NSMutableURLRequest alloc]init];
+   NSURL *theURL = [NSURL URLWithString:_postString];
+   [request setURL:theURL];
+   [request setHTTPMethod:@"POST"];
+   [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type" ];
+   [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+   [request setHTTPBody:jsonData];
+   
+   NSURLConnection *connection = [[NSURLConnection alloc]initWithRequest:request delegate:self];
+   [connection start];
+}
+
+
 - (IBAction)fetchFeed:(id)sender {
    NSString *requestString = _urlString;
    NSURL *url = [NSURL URLWithString:requestString];
    NSURLRequest *req = [NSURLRequest requestWithURL:url];
    
-   NSURLSession
-}*/
+   NSURLSessionDataTask *dataTask = [self.session dataTaskWithRequest:req completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+      NSDictionary *jsonObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+      
+      self.postString = jsonObject[@"dataUrl"];
+      
+      NSLog(@"%@",self.postString);
+   }];
+   [dataTask resume];
+}
+- (IBAction)printFields:(id)sender {
+   NSLog(@"name: %@, email: %@, partySize: %@",_nameText.text,_emailText.text,_partyText.text);
+}
 
 /*
 #pragma mark - Navigation

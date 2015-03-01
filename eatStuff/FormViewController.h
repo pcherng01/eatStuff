@@ -11,4 +11,8 @@
 
 @interface FormViewController : UIViewController
 @property (nonatomic,strong) NSString *urlString;
+@property (nonatomic,strong) NSString *customerName;
+@property (nonatomic,strong) NSString *email;
+@property (nonatomic,assign) NSNumber *partySize;
+@property (nonatomic,strong) NSString *postString;
 @end

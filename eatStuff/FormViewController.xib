@@ -6,6 +6,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FormViewController">
             <connections>
+                <outlet property="emailText" destination="p86-59-Zg9" id="Dqc-ku-LgP"/>
+                <outlet property="nameText" destination="CEq-pg-4WA" id="TXn-CM-RfW"/>
+                <outlet property="partyText" destination="EiI-1h-KQK" id="h8w-bm-Tow"/>
                 <outlet property="urlText" destination="JLD-0S-llg" id="KrJ-AP-vgO"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -33,11 +36,6 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CEq-pg-4WA">
-                    <rect key="frame" x="65" y="84" width="499" height="30"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p86-59-Zg9">
                     <rect key="frame" x="65" y="145" width="499" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -59,9 +57,32 @@
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="fetchFeed:" destination="-1" eventType="touchUpInside" id="fn4-9j-duf"/>
+                        <action selector="fetchFeed:" destination="-1" eventType="touchUpInside" id="Qei-Jl-2yP"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLi-ho-fNr">
+                    <rect key="frame" x="404" y="276" width="57" height="30"/>
+                    <state key="normal" title="Request">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="postRequestJSON:" destination="-1" eventType="touchUpInside" id="AcT-4N-kUp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbv-c2-K9r">
+                    <rect key="frame" x="49" y="276" width="70" height="30"/>
+                    <state key="normal" title="Print Field">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="printFields:" destination="-1" eventType="touchUpInside" id="aO7-rU-vJf"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CEq-pg-4WA">
+                    <rect key="frame" x="65" y="84" width="499" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
