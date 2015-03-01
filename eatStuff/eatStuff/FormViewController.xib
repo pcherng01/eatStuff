@@ -51,15 +51,6 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gU2-tp-Itj">
-                    <rect key="frame" x="276" y="276" width="49" height="30"/>
-                    <state key="normal" title="Submit">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="fetchFeed:" destination="-1" eventType="touchUpInside" id="Qei-Jl-2yP"/>
-                    </connections>
-                </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLi-ho-fNr">
                     <rect key="frame" x="404" y="276" width="57" height="30"/>
                     <state key="normal" title="Request">
@@ -69,15 +60,6 @@
                         <action selector="postRequestJSON:" destination="-1" eventType="touchUpInside" id="AcT-4N-kUp"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbv-c2-K9r">
-                    <rect key="frame" x="49" y="276" width="70" height="30"/>
-                    <state key="normal" title="Print Field">
-                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                    </state>
-                    <connections>
-                        <action selector="printFields:" destination="-1" eventType="touchUpInside" id="aO7-rU-vJf"/>
-                    </connections>
-                </button>
                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CEq-pg-4WA">
                     <rect key="frame" x="65" y="84" width="499" height="30"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -85,10 +67,6 @@
                 </textField>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-            <constraints>
-                <constraint firstAttribute="centerX" secondItem="gU2-tp-Itj" secondAttribute="centerX" constant="-0.5" id="Bb5-Gh-H7f"/>
-                <constraint firstAttribute="centerY" secondItem="gU2-tp-Itj" secondAttribute="centerY" constant="9" id="ndw-mm-5NM"/>
-            </constraints>
         </view>
     </objects>
 </document>

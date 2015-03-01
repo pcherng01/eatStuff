@@ -8,6 +8,7 @@
 
 #import "ScanViewController.h"
 #import "FormViewController.h"
+#import "loadingViewController.h"
 @import AVFoundation;
 #import "SCShapeView.h"
 
@@ -118,10 +119,12 @@
             [self startOverlayHideTimer];
             
             _theURL = [transformed stringValue];
-             FormViewController *formViewController = [[FormViewController alloc]init];
-            formViewController.urlString = _theURL;
+             /*FormViewController *formViewController = [[FormViewController alloc]init];
+            formViewController.urlString = _theURL;*/
+            LoadingViewController *loadVC = [[LoadingViewController alloc]init];
+            loadVC.getURL = _theURL;
              // Push it onto the top of the navigation controller's stack
-             [self.navigationController pushViewController:formViewController animated:YES];
+             [self.navigationController pushViewController:loadVC animated:YES];
              
          }
          

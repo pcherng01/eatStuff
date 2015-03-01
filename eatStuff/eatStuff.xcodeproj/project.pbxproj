@@ -16,7 +16,9 @@
 		3B51F38F1AA28CEA00206FE3 /* eatStuffTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B51F38E1AA28CEA00206FE3 /* eatStuffTests.m */; };
 		3B51F3FE1AA2C95000206FE3 /* SCShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B51F3FD1AA2C95000206FE3 /* SCShapeView.m */; };
 		3B51F4051AA2D2ED00206FE3 /* FormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B51F4031AA2D2ED00206FE3 /* FormViewController.m */; };
-		3B51F4061AA2D2ED00206FE3 /* FormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B51F4041AA2D2ED00206FE3 /* FormViewController.xib */; };
+		3B70A0821AA3219C0089B967 /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B70A0801AA3219C0089B967 /* LoadingViewController.m */; };
+		3B70A0831AA3219C0089B967 /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B70A0811AA3219C0089B967 /* LoadingViewController.xib */; };
+		3B70A0851AA326D80089B967 /* FormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B70A0841AA326D80089B967 /* FormViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +49,10 @@
 		3B51F3FD1AA2C95000206FE3 /* SCShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCShapeView.m; sourceTree = "<group>"; };
 		3B51F4021AA2D2ED00206FE3 /* FormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FormViewController.h; path = ../FormViewController.h; sourceTree = "<group>"; };
 		3B51F4031AA2D2ED00206FE3 /* FormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FormViewController.m; path = ../FormViewController.m; sourceTree = "<group>"; };
-		3B51F4041AA2D2ED00206FE3 /* FormViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FormViewController.xib; path = ../FormViewController.xib; sourceTree = "<group>"; };
+		3B70A07F1AA3219C0089B967 /* LoadingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadingViewController.h; sourceTree = "<group>"; };
+		3B70A0801AA3219C0089B967 /* LoadingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadingViewController.m; sourceTree = "<group>"; };
+		3B70A0811AA3219C0089B967 /* LoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
+		3B70A0841AA326D80089B967 /* FormViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FormViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +103,10 @@
 				3B51F37A1AA28CE900206FE3 /* ScanViewController.m */,
 				3B51F4021AA2D2ED00206FE3 /* FormViewController.h */,
 				3B51F4031AA2D2ED00206FE3 /* FormViewController.m */,
-				3B51F4041AA2D2ED00206FE3 /* FormViewController.xib */,
+				3B70A0841AA326D80089B967 /* FormViewController.xib */,
+				3B70A07F1AA3219C0089B967 /* LoadingViewController.h */,
+				3B70A0801AA3219C0089B967 /* LoadingViewController.m */,
+				3B70A0811AA3219C0089B967 /* LoadingViewController.xib */,
 				3B51F37F1AA28CE900206FE3 /* Images.xcassets */,
 				3B51F3811AA28CE900206FE3 /* LaunchScreen.xib */,
 				3B51F3721AA28CE900206FE3 /* Supporting Files */,
@@ -214,8 +222,9 @@
 			files = (
 				3B51F37E1AA28CE900206FE3 /* Main.storyboard in Resources */,
 				3B51F3831AA28CE900206FE3 /* LaunchScreen.xib in Resources */,
-				3B51F4061AA2D2ED00206FE3 /* FormViewController.xib in Resources */,
 				3B51F3801AA28CE900206FE3 /* Images.xcassets in Resources */,
+				3B70A0851AA326D80089B967 /* FormViewController.xib in Resources */,
+				3B70A0831AA3219C0089B967 /* LoadingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +245,7 @@
 				3B51F37B1AA28CE900206FE3 /* ScanViewController.m in Sources */,
 				3B51F3781AA28CE900206FE3 /* AppDelegate.m in Sources */,
 				3B51F3FE1AA2C95000206FE3 /* SCShapeView.m in Sources */,
+				3B70A0821AA3219C0089B967 /* LoadingViewController.m in Sources */,
 				3B51F4051AA2D2ED00206FE3 /* FormViewController.m in Sources */,
 				3B51F3751AA28CE900206FE3 /* main.m in Sources */,
 			);

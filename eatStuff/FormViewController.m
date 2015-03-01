@@ -62,25 +62,6 @@
    [connection start];
 }
 
-
-- (IBAction)fetchFeed:(id)sender {
-   NSString *requestString = _urlString;
-   NSURL *url = [NSURL URLWithString:requestString];
-   NSURLRequest *req = [NSURLRequest requestWithURL:url];
-   
-   NSURLSessionDataTask *dataTask = [self.session dataTaskWithRequest:req completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-      NSDictionary *jsonObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
-      
-      self.postString = jsonObject[@"dataUrl"];
-      
-      NSLog(@"%@",self.postString);
-   }];
-   [dataTask resume];
-}
-- (IBAction)printFields:(id)sender {
-   NSLog(@"name: %@, email: %@, partySize: %@",_nameText.text,_emailText.text,_partyText.text);
-}
-
 /*
 #pragma mark - Navigation
 
