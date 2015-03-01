@@ -14,6 +14,7 @@
 		3B51F3801AA28CE900206FE3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B51F37F1AA28CE900206FE3 /* Images.xcassets */; };
 		3B51F3831AA28CE900206FE3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B51F3811AA28CE900206FE3 /* LaunchScreen.xib */; };
 		3B51F38F1AA28CEA00206FE3 /* eatStuffTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B51F38E1AA28CEA00206FE3 /* eatStuffTests.m */; };
+		3B51F3FE1AA2C95000206FE3 /* SCShapeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B51F3FD1AA2C95000206FE3 /* SCShapeView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		3B51F3881AA28CEA00206FE3 /* eatStuffTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eatStuffTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B51F38D1AA28CEA00206FE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B51F38E1AA28CEA00206FE3 /* eatStuffTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = eatStuffTests.m; sourceTree = "<group>"; };
+		3B51F3FC1AA2C95000206FE3 /* SCShapeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCShapeView.h; sourceTree = "<group>"; };
+		3B51F3FD1AA2C95000206FE3 /* SCShapeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCShapeView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,8 @@
 		3B51F3711AA28CE900206FE3 /* eatStuff */ = {
 			isa = PBXGroup;
 			children = (
+				3B51F3FC1AA2C95000206FE3 /* SCShapeView.h */,
+				3B51F3FD1AA2C95000206FE3 /* SCShapeView.m */,
 				3B51F3761AA28CE900206FE3 /* AppDelegate.h */,
 				3B51F3771AA28CE900206FE3 /* AppDelegate.m */,
 				3B51F3791AA28CE900206FE3 /* ViewController.h */,
@@ -221,6 +226,7 @@
 			files = (
 				3B51F37B1AA28CE900206FE3 /* ViewController.m in Sources */,
 				3B51F3781AA28CE900206FE3 /* AppDelegate.m in Sources */,
+				3B51F3FE1AA2C95000206FE3 /* SCShapeView.m in Sources */,
 				3B51F3751AA28CE900206FE3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +418,7 @@
 				3B51F3941AA28CEA00206FE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3B51F3951AA28CEA00206FE3 /* Build configuration list for PBXNativeTarget "eatStuffTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +427,7 @@
 				3B51F3971AA28CEA00206FE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
