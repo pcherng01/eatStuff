@@ -19,12 +19,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
    // Override point for customization after application launch.
    self.window = [[UIWindow alloc]initWithFrame:UIScreen.mainScreen.bounds];
-   //ScanViewController *scanViewController = [[ScanViewController alloc]init];
+   
+   //[Braintree setReturnURLScheme:@"come.something.eatStuff.payments"];
+   
+   ScanViewController *scanViewController = [[ScanViewController alloc]init];
    PaymentViewController *paymentVC = [[PaymentViewController alloc]init];
    
    // Create an instance of a UINavigationController
    // its stack contains only itemsViewController
-   UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:paymentVC];
+   UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:scanViewController];
    // Place Navigation controller's view in the window hierarchy
    self.window.rootViewController = navController;
    
@@ -33,7 +36,10 @@
    return YES;
 }
 
-
+/*
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
+   return [Braintree handleOpenURL:url sourceApplication:sourceApplication];
+}*/
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
