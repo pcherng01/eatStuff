@@ -7,6 +7,7 @@
 //
 
 #import "PaymentViewController.h"
+#import "ScanViewController.h"
 
 @interface PaymentViewController () <BTDropInViewControllerDelegate>
 
@@ -78,6 +79,25 @@
    } failure:^(AFHTTPRequestOperation *operation, NSError *error){
       NSLog(@"Error: %@",error);
    }];
+}
+- (IBAction)goToScan:(id)sender {
+   ScanViewController *scanVC = [[ScanViewController alloc]init];
+   // Push it onto the top of the navigation controller's stack
+   [self.navigationController pushViewController:scanVC animated:YES];
+}
+- (IBAction)postCheck:(id)sender {
+   NSString *stringz = @"ele";
+   NSDictionary *data = [NSDictionary dictionary];
+   NSError *error = [[NSError alloc]init];
+   NSData *jsonData = [NSJSONSerialization dataWithJSONObject:data options:kNilOptions error:&error];
+   
+   NSMutableURLRequest *request = [[NSMutableURLRequest alloc]init];
+   NSURL *theURL = [NSURL URLWithString:@"https://eatstuff.ngrok.com/buy"];
+   [request setURL:theURL];
+   [request setHTTPMethod:@"POST"];
+   [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type" ];
+   [request setValue:@"application/json" forHTTPHeaderField:@"Accept"];
+   [request setHTTPBody:jsonData];
 }
 /*
 #pragma mark - Navigation

@@ -7,6 +7,7 @@
 //
 
 #import "FormViewController.h"
+#import "PaymentViewController.h"
 
 @interface FormViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *urlText;
@@ -57,6 +58,9 @@
    
    NSURLConnection *connection = [[NSURLConnection alloc]initWithRequest:request delegate:self];
    [connection start];
+   PaymentViewController *payVC = [[PaymentViewController alloc]init];
+   // Push it onto the top of the navigation controller's stack
+   [self.navigationController pushViewController:payVC animated:YES];
 }
 
 /*

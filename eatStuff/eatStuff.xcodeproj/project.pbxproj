@@ -22,6 +22,8 @@
 		3B70A0851AA326D80089B967 /* FormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B70A0841AA326D80089B967 /* FormViewController.xib */; };
 		3B70A0ED1AA37B760089B967 /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B70A0EB1AA37B760089B967 /* PaymentViewController.m */; };
 		3B70A0EE1AA37B760089B967 /* PaymentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B70A0EC1AA37B760089B967 /* PaymentViewController.xib */; };
+		3B70A1331AA39E940089B967 /* RequestCheckViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B70A1311AA39E940089B967 /* RequestCheckViewController.m */; };
+		3B70A1341AA39E940089B967 /* RequestCheckViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B70A1321AA39E940089B967 /* RequestCheckViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,9 @@
 		3B70A0EA1AA37B760089B967 /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
 		3B70A0EB1AA37B760089B967 /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
 		3B70A0EC1AA37B760089B967 /* PaymentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PaymentViewController.xib; sourceTree = "<group>"; };
+		3B70A1301AA39E940089B967 /* RequestCheckViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestCheckViewController.h; sourceTree = "<group>"; };
+		3B70A1311AA39E940089B967 /* RequestCheckViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestCheckViewController.m; sourceTree = "<group>"; };
+		3B70A1321AA39E940089B967 /* RequestCheckViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestCheckViewController.xib; sourceTree = "<group>"; };
 		3C6DDF859F009201B728F9A5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		97B15EF9BE35B15063B2BEC0 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		C6FEB6736EA0449084593DEF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,6 +127,9 @@
 				3B70A07F1AA3219C0089B967 /* LoadingViewController.h */,
 				3B70A0801AA3219C0089B967 /* LoadingViewController.m */,
 				3B70A0811AA3219C0089B967 /* LoadingViewController.xib */,
+				3B70A1301AA39E940089B967 /* RequestCheckViewController.h */,
+				3B70A1311AA39E940089B967 /* RequestCheckViewController.m */,
+				3B70A1321AA39E940089B967 /* RequestCheckViewController.xib */,
 				3B51F37F1AA28CE900206FE3 /* Images.xcassets */,
 				3B51F3811AA28CE900206FE3 /* LaunchScreen.xib */,
 				3B51F3721AA28CE900206FE3 /* Supporting Files */,
@@ -256,6 +264,7 @@
 			files = (
 				3B51F37E1AA28CE900206FE3 /* Main.storyboard in Resources */,
 				3B51F3831AA28CE900206FE3 /* LaunchScreen.xib in Resources */,
+				3B70A1341AA39E940089B967 /* RequestCheckViewController.xib in Resources */,
 				3B51F3801AA28CE900206FE3 /* Images.xcassets in Resources */,
 				3B70A0851AA326D80089B967 /* FormViewController.xib in Resources */,
 				3B70A0831AA3219C0089B967 /* LoadingViewController.xib in Resources */,
@@ -315,6 +324,7 @@
 				3B51F3FE1AA2C95000206FE3 /* SCShapeView.m in Sources */,
 				3B70A0821AA3219C0089B967 /* LoadingViewController.m in Sources */,
 				3B51F4051AA2D2ED00206FE3 /* FormViewController.m in Sources */,
+				3B70A1331AA39E940089B967 /* RequestCheckViewController.m in Sources */,
 				3B70A0ED1AA37B760089B967 /* PaymentViewController.m in Sources */,
 				3B51F3751AA28CE900206FE3 /* main.m in Sources */,
 			);

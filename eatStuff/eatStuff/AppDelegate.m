@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "ScanViewController.h"
 #import "PaymentViewController.h"
+#import "RequestCheckViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -22,12 +23,13 @@
    
    //[Braintree setReturnURLScheme:@"come.something.eatStuff.payments"];
    
-   ScanViewController *scanViewController = [[ScanViewController alloc]init];
+   //ScanViewController *scanViewController = [[ScanViewController alloc]init];
    PaymentViewController *paymentVC = [[PaymentViewController alloc]init];
    
    // Create an instance of a UINavigationController
    // its stack contains only itemsViewController
-   UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:scanViewController];
+   UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:paymentVC];
+   self.mainController = navController;
    // Place Navigation controller's view in the window hierarchy
    self.window.rootViewController = navController;
    
@@ -36,6 +38,19 @@
    return YES;
 }
 
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+   if ([[url host] isEqualToString:@"eatStuffz"]) {
+      if ([[url path]isEqualToString:@"/test"]) {
+         [self.mainController pushViewController:[[PaymentViewController alloc]init] animated:YES];
+      }
+      
+      return YES;
+   }else {
+      return NO;
+   }
+   return 0;
+}
 /*
 -(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
    return [Braintree handleOpenURL:url sourceApplication:sourceApplication];

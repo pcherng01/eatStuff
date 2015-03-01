@@ -27,7 +27,7 @@
 			<string>come.something.eatStuff</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>come.something.eatStuff.payments</string>
+				<string>eatStuffz</string>
 			</array>
 		</dict>
 	</array>
