@@ -24,6 +24,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
    NSLog(@"%@", self.dataFromServer);
+   NSLog(@"%@", self.urlString);
    _restaurantNameTextField.text = _dataFromServer[@"name"];
 }
 
@@ -47,7 +48,7 @@
    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:data options:kNilOptions error:&error];
    
    NSMutableURLRequest *request = [[NSMutableURLRequest alloc]init];
-   NSURL *theURL = [NSURL URLWithString:_postString];
+   NSURL *theURL = [NSURL URLWithString:self.urlString];
    [request setURL:theURL];
    [request setHTTPMethod:@"POST"];
    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type" ];

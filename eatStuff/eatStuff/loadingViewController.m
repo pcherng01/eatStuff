@@ -40,7 +40,7 @@
       NSDictionary *jsonObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
       
       self.dataFromWebServer = jsonObject;
-      //self.postString = jsonObject[@"dataUrl"];
+      self.getURL = jsonObject[@"dataUrl"];
       FormViewController *formVC = [[FormViewController alloc]init];
       formVC.urlString = self.getURL;
       formVC.dataFromServer = self.dataFromWebServer;
