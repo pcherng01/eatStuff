@@ -117,9 +117,9 @@
             // Start the timer which will hide the overlay
             [self startOverlayHideTimer];
             
-            
+            _theURL = [transformed stringValue];
              FormViewController *formViewController = [[FormViewController alloc]init];
-             
+            formViewController.urlString = _theURL;
              // Push it onto the top of the navigation controller's stack
              [self.navigationController pushViewController:formViewController animated:YES];
              

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+@class FormViewController;
 
 @interface FormViewController : UIViewController
-
+@property (nonatomic,strong) NSString *urlString;
 @end

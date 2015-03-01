@@ -9,6 +9,8 @@
 #import "FormViewController.h"
 
 @interface FormViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *urlText;
+@property (nonatomic,strong) NSURLSession *session;
 
 @end
 
@@ -17,12 +19,30 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+   
+   NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
+   _session = [NSURLSession sessionWithConfiguration:config delegate:nil delegateQueue:nil];
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+-(void)viewWillAppear:(BOOL)animated
+{
+   [super viewWillAppear:animated];
+   self.urlText.text = _urlString;
+   
+}
+/*
+- (IBAction)fetchFeed:(id)sender {
+   NSString *requestString = _urlString;
+   NSURL *url = [NSURL URLWithString:requestString];
+   NSURLRequest *req = [NSURLRequest requestWithURL:url];
+   
+   NSURLSession
+}*/
 
 /*
 #pragma mark - Navigation
