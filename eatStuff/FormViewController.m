@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *nameText;
 @property (weak, nonatomic) IBOutlet UITextField *emailText;
 @property (weak, nonatomic) IBOutlet UITextField *partyText;
+@property (weak, nonatomic) IBOutlet UITextField *restaurantNameTextField;
 
 @end
 
@@ -22,7 +23,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-   NSLog(@"%@", self.urlString);
+   NSLog(@"%@", self.dataFromServer);
+   _restaurantNameTextField.text = _dataFromServer[@"name"];
 }
 
 - (void)didReceiveMemoryWarning {
