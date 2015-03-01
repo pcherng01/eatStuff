@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ScanViewController.h"
+#import "PaymentViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -18,11 +19,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
    // Override point for customization after application launch.
    self.window = [[UIWindow alloc]initWithFrame:UIScreen.mainScreen.bounds];
-   ScanViewController *scanViewController = [[ScanViewController alloc]init];
+   //ScanViewController *scanViewController = [[ScanViewController alloc]init];
+   PaymentViewController *paymentVC = [[PaymentViewController alloc]init];
    
    // Create an instance of a UINavigationController
    // its stack contains only itemsViewController
-   UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:scanViewController];
+   UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:paymentVC];
    // Place Navigation controller's view in the window hierarchy
    self.window.rootViewController = navController;
    
