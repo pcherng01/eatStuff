@@ -22,10 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-   
-   NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
-   _session = [NSURLSession sessionWithConfiguration:config delegate:nil delegateQueue:nil];
-
+   NSLog(@"%@", self.urlString);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,8 +32,6 @@
 -(void)viewWillAppear:(BOOL)animated
 {
    [super viewWillAppear:animated];
-   self.urlText.text = _urlString;
-   
 }
 
 - (IBAction)postRequestJSON:(id)sender {
@@ -44,7 +39,6 @@
    NSString *nameString = [[NSString alloc]initWithFormat:_nameText.text];
     NSString *emailString = [[NSString alloc]initWithFormat:_emailText.text];*/
    self.partySize = [NSNumber numberWithInt:[_partyText.text intValue]];
-   
    
    NSDictionary *data = [NSDictionary dictionaryWithObjectsAndKeys:_nameText.text,@"name",self.partySize,@"partySize",_emailText.text,@"email",nil];
    NSError *error = [[NSError alloc]init];

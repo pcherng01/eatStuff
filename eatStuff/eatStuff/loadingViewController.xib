@@ -15,11 +15,16 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="HFl-ax-xGy">
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="HFl-ax-xGy">
                     <rect key="frame" x="290" y="290" width="20" height="20"/>
+                    <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                 </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="HFl-ax-xGy" secondAttribute="centerY" id="aaq-do-ocQ"/>
+                <constraint firstAttribute="centerX" secondItem="HFl-ax-xGy" secondAttribute="centerX" id="hhs-xn-HBR"/>
+            </constraints>
         </view>
     </objects>
 </document>

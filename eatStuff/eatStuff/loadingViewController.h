@@ -12,5 +12,6 @@
 
 @property (nonatomic,strong) NSString *getURL;
 @property (nonatomic,strong) UINavigationController *navVC;
+@property (nonatomic,strong) NSDictionary *dataFromWebServer;
 
 @end

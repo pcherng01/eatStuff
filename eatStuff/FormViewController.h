@@ -15,4 +15,5 @@
 @property (nonatomic,strong) NSString *email;
 @property (nonatomic,assign) NSNumber *partySize;
 @property (nonatomic,strong) NSString *postString;
+@property (nonatomic,strong) NSDictionary *dataFromServer;
 @end

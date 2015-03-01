@@ -39,9 +39,11 @@
    NSURLSessionDataTask *dataTask = [self.session dataTaskWithRequest:req completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
       NSDictionary *jsonObject = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
       
+      self.dataFromWebServer = jsonObject;
       //self.postString = jsonObject[@"dataUrl"];
       FormViewController *formVC = [[FormViewController alloc]init];
       formVC.urlString = self.getURL;
+      formVC.dataFromServer = self.dataFromWebServer;
       [self.navigationController pushViewController:formVC animated:YES];
       
    }];
