@@ -7,7 +7,6 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentViewController">
             <connections>
                 <outlet property="startPaymentButton" destination="sQ7-op-vQR" id="BYe-CA-TtZ"/>
-                <outlet property="transactionIDLabel" destination="zVI-ay-Dr7" id="M69-ou-uhv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

@@ -73,6 +73,7 @@
 -(void)postNonceToServer:(NSString *)paymentMethodNonce {
    [self.manager POST:@"https://eatstuff.ngrok.com/purchase" parameters:@{@"payment_method_nonce":paymentMethodNonce} success:^(AFHTTPRequestOperation *operation, id responseObject) {
       NSString *transactionID = responseObject[@"transaction"][@"id"];
+      NSLog(@"%@",transactionID);
       self.transactionIDLabel.text = [[NSString alloc]initWithFormat:@"Transaction ID: %@", transactionID];
    } failure:^(AFHTTPRequestOperation *operation, NSError *error){
       NSLog(@"Error: %@",error);
