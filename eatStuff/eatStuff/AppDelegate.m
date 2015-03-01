@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "ScanViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
    // Override point for customization after application launch.
+   self.window = [[UIWindow alloc]initWithFrame:UIScreen.mainScreen.bounds];
+   ScanViewController *scanViewController = [[ScanViewController alloc]init];
+   
+   // Create an instance of a UINavigationController
+   // its stack contains only itemsViewController
+   UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:scanViewController];
+   // Place Navigation controller's view in the window hierarchy
+   self.window.rootViewController = navController;
+   
+   self.window.backgroundColor = [UIColor whiteColor];
+   [self.window makeKeyAndVisible];
    return YES;
 }
 
